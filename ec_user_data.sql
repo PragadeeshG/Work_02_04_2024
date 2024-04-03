@@ -1,0 +1,15 @@
+create table if not exists ec_user_data(
+id bigint not null,
+script_name varchar(255) null,
+script_path varchar(255) null,
+run_once varchar(255) null,
+run_always varchar(255) null,
+run_at_start varchar(255) null,
+launching_command varchar(255) null,
+install_updates varchar(255) null,
+install_required_softwares varchar(255) null,
+download_common_files varchar(255) null,
+script_output varchar(255) null,
+log_path varchar(255) null,
+user_access varchar(255) null,
+constraint ec_user_data_pk primary key(id));
